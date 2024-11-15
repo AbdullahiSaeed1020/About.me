@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --light-purple: #ac5bdd;
+  --purple: #1c1938;
+  --dark-purple: #0a0c1b;
+  --grey: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: var(--dark-purple);
+  color: #fff;
+  justify-content: center;
+}
+section {
+  display: flex;
+  width: 60%;
+  margin-top: 15%;
+}
+
+.left {
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  padding: 37px 37px 30px 37px;
+  border-radius: 10px 0 0 10px;
+  width: 60%;
+  padding-left: 80px;
+}
+span {
+  color: var(--light-purple);
+}
+.left .h2 {
+  font-size: 2.07rem;
+  font-family: inter;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 0.7rem;
+  margin-bottom: 40px;
+  font-family: inter;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+ul li h2 {
+  font-size: 1.5rem;
+  font-family: hel;
+}
+ul li h5{
+  color:  var(--grey);
+}
+
+.imgContainer {
+  position: relative;
+  display: inline-block;
+}
+.imgContainer img {
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.646);
+}
+
